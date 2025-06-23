@@ -88,6 +88,7 @@ const handleSubmit = () => {
                   id="first-name"
                   type="text"
                   v-model="contactForm.firstName"
+                  autocomplete="given-name"
                 />
               </div>
 
@@ -97,6 +98,7 @@ const handleSubmit = () => {
                   id="last-name"
                   type="text"
                   v-model="contactForm.lastName"
+                  autocomplete="family-name"
                 />
               </div>
             </div>
@@ -107,6 +109,7 @@ const handleSubmit = () => {
                 id="email"
                 type="email"
                 v-model="contactForm.email"
+                autocomplete="email"
               />
             </div>
 
