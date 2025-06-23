@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useColorMode } from "@vueuse/core";
-const mode = useColorMode();
+const _mode = useColorMode();
 
 import heroImageDark from "@/assets/hero-image-dark.jpg";
 </script>
