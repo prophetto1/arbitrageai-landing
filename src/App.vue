@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useColorMode } from "@vueuse/core";
-const _mode = useColorMode();
 mode.value = "dark";
 
 import Navbar from "./components/Navbar.vue";
