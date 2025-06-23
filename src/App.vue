@@ -8,7 +8,6 @@ import Hero from "./components/Hero.vue";
 import Features from "./components/Features.vue";
 import Benefits from "./components/Benefits.vue";
 import Services from "./components/Services.vue";
-import HowItWorks from "./components/HowItWorks.vue";
 import Team from "./components/Team.vue";
 import Community from "./components/Community.vue";
 import Contact from "./components/Contact.vue";

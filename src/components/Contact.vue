@@ -58,46 +58,16 @@ const handleSubmit = () => {
           <h2 class="text-3xl md:text-4xl font-bold">Connect With Us</h2>
         </div>
         <p class="mb-8 text-muted-foreground lg:w-5/6">
-          Have questions or want to learn more about ArbitrageAI? Reach out to
+          Have more questions or want to learn more? 
+          Reach out to
           us through the following channels:
         </p>
 
         <div class="flex flex-col gap-4">
           <div>
             <div class="flex gap-2 mb-1">
-              <Building2 />
-              <div class="font-bold">Find Us</div>
-            </div>
-
-            <div>To be answered by Jon.</div>
-          </div>
-
-          <div>
-            <div class="flex gap-2 mb-1">
-              <Phone />
-              <div class="font-bold">Call Us</div>
-            </div>
-
-            <div>To be answered by Jon.</div>
-          </div>
-
-          <div>
-            <div class="flex gap-2 mb-1">
               <Mail />
               <div class="font-bold">Mail Us</div>
-            </div>
-
-            <div>To be answered by Jon.</div>
-          </div>
-
-          <div>
-            <div class="flex gap-2">
-              <Clock />
-              <div class="font-bold">Visit Us</div>
-            </div>
-
-            <div>
-              <div>To be answered by Jon.</div>
             </div>
           </div>
         </div>

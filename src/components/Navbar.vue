@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
 
 import {
   NavigationMenu,
@@ -20,7 +20,6 @@ import {
 
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-
 import { Menu } from "lucide-vue-next";
 import logo from "@/assets/CI2.jpg";
 
@@ -35,23 +34,15 @@ interface FeatureProps {
 }
 
 const routeList: RouteProps[] = [
-  {
-    href: "#features",
-    label: "Features",
-  },
-  {
-    href: "#how-it-works",
-    label: "How It Works",
-  },
-  {
-    href: "#contact",
-    label: "Contact",
-  },
-  {
-    href: "#faq",
-    label: "FAQ",
-  },
+  { href: "#features", label: "Features" },
+  { href: "#services", label: "Services" },
+  { href: "#contact", label: "Contact" },
+  { href: "#faq", label: "FAQ" },
 ];
+
+const desktopRouteList = computed(() =>
+  routeList.filter((route) => route.label !== "Features")
+);
 
 const featureList: FeatureProps[] = [
   {
@@ -76,7 +67,7 @@ const isOpen = ref<boolean>(false);
 
 <template>
   <header
-    class="shadow-dark w-full top-0 mx-auto sticky border-b z-40 grid grid-cols-3 items-center p-2 shadow-md"
+    class="shadow-dark w-full top-0 sticky border-b z-40 grid grid-cols-2 lg:grid-cols-3 items-center p-2 shadow-md"
     style="background-color: #1d2021"
   >
     <a
@@ -86,19 +77,15 @@ const isOpen = ref<boolean>(false);
       <img
         :src="logo"
         alt="ArbitrageAI logo"
-        class="h-12"
+        class="h-12 mr-2 rounded"
       />
     </a>
     <!-- Mobile -->
-    <div class="flex items-center lg:hidden">
+    <div class="flex items-center justify-self-end lg:hidden">
       <Sheet v-model:open="isOpen">
         <SheetTrigger as-child>
-          <Menu
-            @click="isOpen = true"
-            class="cursor-pointer"
-          />
+          <Menu @click="isOpen = true" class="cursor-pointer" />
         </SheetTrigger>
-
         <SheetContent
           side="left"
           class="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card"
@@ -106,19 +93,9 @@ const isOpen = ref<boolean>(false);
           <div>
             <SheetHeader class="mb-4 ml-4">
               <SheetTitle class="flex items-center">
-                <a
-                  href="/"
-                  class="flex items-center"
-                >
-                  <img
-                    :src="logo"
-                    alt="ArbitrageAI logo"
-                    class="h-12"
-                  />
-                </a>
+                <img :src="logo" alt="ArbitrageAI logo" class="h-11 mr-2" />
               </SheetTitle>
             </SheetHeader>
-
             <div class="flex flex-col gap-2">
               <Button
                 v-for="{ href, label } in routeList"
@@ -127,63 +104,28 @@ const isOpen = ref<boolean>(false);
                 variant="ghost"
                 class="justify-start text-base"
               >
-                <a
-                  @click="isOpen = false"
-                  :href="href"
-                >
-                  {{ label }}
-                </a>
+                <a @click="isOpen = false" :href="href">{{ label }}</a>
               </Button>
             </div>
           </div>
-
-          <SheetFooter class="flex-col sm:flex-col justify-start items-start">
+          <SheetFooter class="flex-col items-start">
             <Separator class="mb-2" />
           </SheetFooter>
         </SheetContent>
       </Sheet>
     </div>
-
     <!-- Desktop -->
     <NavigationMenu class="hidden lg:block justify-self-center">
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger class="text-base">
-            Features
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <div class="grid w-[600px] grid-cols-2 gap-5 p-4">
-              <img
-                src="https://www.radix-vue.com/logo.svg"
-                alt="Beach"
-                class="h-full w-full rounded-md object-cover"
-              />
-              <ul class="flex flex-col gap-2">
-                <li
-                  v-for="{ title, description } in featureList"
-                  :key="title"
-                  class="rounded-md p-3 text-sm hover:bg-muted"
-                >
-                  <p class="mb-1 font-semibold leading-none text-foreground">
-                    {{ title }}
-                  </p>
-                  <p class="line-clamp-2 text-muted-foreground">
-                    {{ description }}
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-
-        <NavigationMenuItem>
+        <NavigationMenuItem
+          v-for="{ href, label } in routeList"
+          :key="label"
+        >
           <NavigationMenuLink asChild>
             <Button
-              v-for="{ href, label } in routeList"
-              :key="label"
               as-child
               variant="ghost"
-              class="justify-start text-base"
+              class="text-base"
             >
               <a :href="href">
                 {{ label }}
@@ -193,13 +135,12 @@ const isOpen = ref<boolean>(false);
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-
-    <div class="hidden lg:flex"></div>
+    <div class="hidden lg:flex lg:justify-self-end"></div>
   </header>
 </template>
 
 <style scoped>
 .shadow-dark {
-  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.141);
+  box-shadow: inset 0 0 5 rgba(255, 255, 255, 0.141);
 }
 </style>

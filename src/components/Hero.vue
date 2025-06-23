@@ -1,4 +1,10 @@
 <script setup lang="ts">
+import { useColorMode } from "@vueuse/core";
+const mode = useColorMode();
+
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-vue-next";
 import heroImageDark from "@/assets/hero-image-dark.jpg";
 </script>
 
@@ -9,10 +15,10 @@ import heroImageDark from "@/assets/hero-image-dark.jpg";
     >
       <div class="text-center space-y-8">
         <div
-          class="max-w-screen-md mx-auto text-center text-5xl md:text-6xl font-bold"
+          class="max-w-screen-md mx-auto text-center text-5xl md:text-6x2 font-bold"
         >
           <h1>
-            Unlock Crypto Arbitrage Opportunities with
+             Crypto Arbitrage Opportunities with
             <span
               class="text-transparent bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text"
               >AI-Powered Insights
@@ -20,7 +26,7 @@ import heroImageDark from "@/assets/hero-image-dark.jpg";
           </h1>
         </div>
 
-        <p class="max-w-screen-sm mx-auto text-xl text-muted-foreground">
+        <p class="max-w-screen-sm mx-auto text-x2 text-muted-foreground">
           ArbitrageAI is a cutting-edge platform designed to help you discover
           and capitalize on cryptocurrency arbitrage opportunities. Our primary
           service, funding_arbitrage, collects data from centralized exchanges

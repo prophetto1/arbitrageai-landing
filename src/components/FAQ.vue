@@ -37,13 +37,23 @@ const FAQList: FAQProps[] = [
       "The most complete and authoritative database schema is always the raw SQL file: funding_arbitrage/database/migrations/create_tables.sql.",
     value: "item-4",
   },
+  {
+    question: "Your Question Here",
+    answer: "Your answer here.",
+    value: "item-5",
+  },
+  {
+    question: "Your Question Here",
+    answer: "Your answer here.",
+    value: "item-6",
+  },
 ];
 </script>
 
 <template>
   <section
     id="faq"
-    class="container md:w-[700px] py-24 sm:py-32 scroll-mt-20"
+    class="container md:w-[700px] py-24 sm:py-32 scroll-mt-24"
   >
     <div class="text-center mb-8">
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider">FAQS</h2>

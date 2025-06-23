@@ -125,7 +125,7 @@ import logo from "@/assets/CI2.jpg";
       <Separator class="my-6" />
       <section className="">
         <h3 class="">
-          &copy; 2025, signifAI Inc.
+              &copy; 2025, signifAI Inc.
           <a
             target="_blank"
             href="#"
