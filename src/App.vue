@@ -20,7 +20,6 @@ import ScrollToTop from "./components/ScrollToTop.vue";
   <Navbar />
   <Hero />
   <Features />
-  <HowItWorks />
   <Benefits />
   <Team />
   <Services />
