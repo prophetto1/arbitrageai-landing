@@ -1,8 +1,6 @@
 # ArbitrageAI Landing Page
 ## AI-Powered Cryptocurrency Arbitrage Platform
 
-Built with <a href="https://www.shadcn-vue.com/" target="_blank">Shadcn-Vue</a> + <a href="https://vuejs.org/" target="_blank">Vue.js</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
-
 ![ArbitrageAI Landing Page](./public/demo-img.jpg)
 
 Live demo: <a href="https://prophetto1.github.io/landing-page" target="_blank">ArbitrageAI Demo</a>
