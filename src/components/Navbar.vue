@@ -1,13 +1,10 @@
 <script lang="ts" setup>
 import { ref, computed } from "vue";
-
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import {
   Sheet,
@@ -17,7 +14,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Menu } from "lucide-vue-next";
@@ -35,10 +31,6 @@ const routeList: RouteProps[] = [
   { href: "#team", label: "About" },
   { href: "#faq", label: "FAQ" },
 ];
-
-const desktopRouteList = computed(() =>
-  routeList.filter((route) => route.label !== "Features")
-);
 
 const isOpen = ref<boolean>(false);
 </script>

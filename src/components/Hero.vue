@@ -2,9 +2,6 @@
 import { useColorMode } from "@vueuse/core";
 const mode = useColorMode();
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-vue-next";
 import heroImageDark from "@/assets/hero-image-dark.jpg";
 </script>
 
