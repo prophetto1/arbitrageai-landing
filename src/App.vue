@@ -1,6 +1,4 @@
 <script setup lang="ts">
-mode.value = "dark";
-
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import Features from "./components/Features.vue";
