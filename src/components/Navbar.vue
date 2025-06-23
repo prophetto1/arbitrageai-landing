@@ -28,11 +28,6 @@ interface RouteProps {
   label: string;
 }
 
-interface FeatureProps {
-  title: string;
-  description: string;
-}
-
 const routeList: RouteProps[] = [
   { href: "#features", label: "Features" },
   { href: "#services", label: "Services" },
@@ -44,24 +39,6 @@ const routeList: RouteProps[] = [
 const desktopRouteList = computed(() =>
   routeList.filter((route) => route.label !== "Features")
 );
-
-const featureList: FeatureProps[] = [
-  {
-    title: "Live Opportunity Dashboard",
-    description:
-      "Provides a real-time overview of active arbitrage opportunities, allowing users to quickly identify profitable trades.",
-  },
-  {
-    title: "Detailed Opportunity Analysis",
-    description:
-      "Offers all necessary data for users to validate and act on a specific opportunity, including profit/loss breakdown and historical spread charts.",
-  },
-  {
-    title: "Market Indexes",
-    description:
-      "A dedicated section for broader market context and sentiment indicators, such as the Crypto Fear & Greed Index.",
-  },
-];
 
 const isOpen = ref<boolean>(false);
 </script>
