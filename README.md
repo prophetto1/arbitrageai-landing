@@ -1,10 +1,6 @@
 # ArbitrageAI Landing Page
 ## AI-Powered Cryptocurrency Arbitrage Platform
 
-![ArbitrageAI Landing Page](./public/demo-img.jpg)
-
-Live demo: <a href="https://prophetto1.github.io/landing-page" target="_blank">ArbitrageAI Demo</a>
-
 ## About ArbitrageAI
 ArbitrageAI is a cutting-edge platform designed to help you discover and capitalize on cryptocurrency arbitrage opportunities. Our platform focuses on funding rate arbitrage and peer-to-peer arbitrage using AI-powered insights and real-time data analysis.
 
