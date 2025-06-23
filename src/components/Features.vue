@@ -82,7 +82,7 @@ const iconMap: Record<
 <template>
   <section
     id="features"
-    class="container pb-24 sm:pb-32 scroll-mt-20"
+    class="container py-24 sm:py-32 scroll-mt-20"
   >
     <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
       Features
