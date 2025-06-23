@@ -1,57 +1,50 @@
-# Shadcn/Vue Landing Page Template
+# ArbitrageAI Landing Page
+## AI-Powered Cryptocurrency Arbitrage Platform
 
-## <a href="https://www.shadcn-vue.com/" target="_blank">Shadcn-Vue</a> + <a href="https://vuejs.org/" target="_blank">Vue.js</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
+Built with <a href="https://www.shadcn-vue.com/" target="_blank">Shadcn-Vue</a> + <a href="https://vuejs.org/" target="_blank">Vue.js</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
 
-![Alt text](./public/demo-img.jpg)
-Live demo is now available: <a href="https://shadcn-vue-landing-page.vercel.app" target="_blank">Live Demo</a>
+![ArbitrageAI Landing Page](./public/demo-img.jpg)
+
+Live demo: <a href="https://prophetto1.github.io/landing-page" target="_blank">ArbitrageAI Demo</a>
+
+## About ArbitrageAI
+ArbitrageAI is a cutting-edge platform designed to help you discover and capitalize on cryptocurrency arbitrage opportunities. Our platform focuses on funding rate arbitrage and peer-to-peer arbitrage using AI-powered insights and real-time data analysis.
+
+### Core Services
+- **Funding Rate Arbitrage**: Identifies opportunities based on funding rates across centralized exchanges
+- **P2P Arbitrage**: Finds opportunities in peer-to-peer cryptocurrency markets
+- **NEFSS Model**: Advanced Net-risk-adjusted Expected Funding-fee Spread Score analysis
+- **Real-time Data Collection**: Asynchronous data gathering from multiple exchanges
 
 ## Sections
-
-- [x] Navbar
-- [x] Sidebar(mobile)
-- [x] Hero
-- [x] Sponsors
+- [x] Navbar with Features Dropdown
+- [x] Sidebar (mobile)
+- [x] Hero Section
+- [x] Sponsors/Partners
 - [x] Benefits
-- [x] Features
-- [x] Services
-- [x] HowItWorks
+- [x] Features (Technical Stack)
+- [x] Services (Funding & P2P Arbitrage)
+- [x] How It Works (4-Step Process)
 - [x] Testimonials
-- [x] Pricing
-- [x] Frequently Asked Questions(FAQ)
+- [x] Pricing Plans
+- [x] FAQ
 - [x] Team
 - [x] Community
 - [x] Contact
 - [x] Footer
 
 ## Features
-
 - [x] Fully Responsive Design
 - [x] User Friendly Navigation
 - [x] Dark Mode
-- [x] Meta tags
+- [x] Meta Tags for SEO
+- [x] Real-time Dashboard Preview
+- [x] Market Context Integration
+- [x] Technical Architecture Showcase
 
-## How to install
-
-1. Clone this repositoy:
-
-```bash
-git clone https://github.com/leoMirandaa/shadcn-vue-landing-page.git
-```
-
-2. Go into project
-
-```bash
-cd shadcn-vue-landing-page
-```
-
-3. Install dependencies
-
-```bash
-npm install
-```
-
-4. Run project
-
-```bash
-npm run dev
-```
+## Technology Stack
+- **Frontend**: Vue.js 3, TypeScript, Tailwind CSS, Shadcn-Vue
+- **Backend**: Python (AsyncIO), PostgreSQL, Pydantic
+- **Data Collection**: Concurrent API calls with httpx
+- **Analysis**: NEFSS model for opportunity scoring
+- **Database**: PostgreSQL with Neon serverless support
