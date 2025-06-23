@@ -48,7 +48,7 @@ const handleSubmit = () => {
 <template>
   <section
     id="contact"
-    class="container py-24 sm:py-32"
+    class="container py-24 sm:py-32 scroll-mt-20"
   >
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
@@ -117,7 +117,6 @@ const handleSubmit = () => {
                 <Input
                   id="first-name"
                   type="text"
-                  placeholder="Leopoldo"
                   v-model="contactForm.firstName"
                 />
               </div>
@@ -127,7 +126,6 @@ const handleSubmit = () => {
                 <Input
                   id="last-name"
                   type="text"
-                  placeholder="Miranda"
                   v-model="contactForm.lastName"
                 />
               </div>
@@ -138,7 +136,6 @@ const handleSubmit = () => {
               <Input
                 id="email"
                 type="email"
-                placeholder="leomirandadev@gmail.com"
                 v-model="contactForm.email"
               />
             </div>
@@ -166,7 +163,6 @@ const handleSubmit = () => {
               <Label for="message">Message</Label>
               <Textarea
                 id="message"
-                placeholder="Your message..."
                 rows="5"
                 v-model="contactForm.message"
               />

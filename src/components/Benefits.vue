@@ -64,7 +64,7 @@ const iconMap: Record<
 <template>
   <section
     id="benefits"
-    class="container py-24 sm:py-32"
+    class="container py-24 sm:py-32 scroll-mt-20"
   >
     <div class="grid lg:grid-cols-2 place-items-center lg:gap-24">
       <div>

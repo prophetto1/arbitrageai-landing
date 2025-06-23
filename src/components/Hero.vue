@@ -5,6 +5,7 @@ const mode = useColorMode();
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-vue-next";
+import heroImageDark from "@/assets/hero-image-dark.jpg";
 </script>
 
 <template>
@@ -13,16 +14,6 @@ import { ArrowRight } from "lucide-vue-next";
       class="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32"
     >
       <div class="text-center space-y-8">
-        <Badge
-          variant="outline"
-          class="text-sm py-2"
-        >
-          <span class="mr-2 text-primary">
-            <Badge>New</Badge>
-          </span>
-          <span> Identify Profitable Arbitrage Opportunities </span>
-        </Badge>
-
         <div
           class="max-w-screen-md mx-auto text-center text-5xl md:text-6xl font-bold"
         >
@@ -42,32 +33,6 @@ import { ArrowRight } from "lucide-vue-next";
           to identify funding rate arbitrage, while our secondary service
           handles peer-to-peer arbitrage.
         </p>
-
-        <div class="space-y-4 md:space-y-0 md:space-x-4">
-          <Button
-            as-child
-            class="w-5/6 md:w-1/4 font-bold group/arrow"
-          >
-            <a href="#">
-              Get Started
-              <ArrowRight
-                class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
-              />
-            </a>
-          </Button>
-
-          <Button
-            as-child
-            variant="secondary"
-            class="w-5/6 md:w-1/4 font-bold"
-          >
-            <a
-              href="#"
-              target="_blank"
-              >Learn More</a
-            >
-          </Button>
-        </div>
       </div>
 
       <div class="relative group mt-14">
@@ -77,11 +42,9 @@ import { ArrowRight } from "lucide-vue-next";
         ></div>
 
         <img
-          class="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-t-primary/30 img-border-animation"
-          :src="
-            mode == 'light' ? 'hero-image-light.jpg' : 'hero-image-dark.jpg'
-          "
-          alt="dashboard using shadcn-vue"
+          class="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center"
+          :src="heroImageDark"
+          alt="ArbitrageAI Dashboard"
         />
 
         <!-- gradient effect img -->

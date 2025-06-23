@@ -1,10 +1,6 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 
-import { useColorMode } from "@vueuse/core";
-const mode = useColorMode();
-mode.value = "dark";
-
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -25,8 +21,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
-import { ChevronsDown, Menu } from "lucide-vue-next";
-import ToggleTheme from "./ToggleTheme.vue";
+import { Menu } from "lucide-vue-next";
+import logo from "@/assets/CI2.jpg";
 
 interface RouteProps {
   href: string;
@@ -46,14 +42,6 @@ const routeList: RouteProps[] = [
   {
     href: "#how-it-works",
     label: "How It Works",
-  },
-  {
-    href: "#market-context",
-    label: "Market Context",
-  },
-  {
-    href: "#account",
-    label: "Account",
   },
   {
     href: "#contact",
@@ -88,21 +76,19 @@ const isOpen = ref<boolean>(false);
 
 <template>
   <header
-    :class="{
-      'shadow-light': mode === 'light',
-      'shadow-dark': mode === 'dark',
-      'w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border z-40 rounded-2xl flex justify-between items-center p-2 bg-card shadow-md': true,
-    }"
+    class="shadow-dark w-full top-0 mx-auto sticky border-b z-40 grid grid-cols-3 items-center p-2 shadow-md"
+    style="background-color: #1d2021"
   >
     <a
       href="/"
       class="font-bold text-lg flex items-center"
     >
-      <ChevronsDown
-        class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
+      <img
+        :src="logo"
+        alt="ArbitrageAI logo"
+        class="h-12"
       />
-      ArbitrageAI</a
-    >
+    </a>
     <!-- Mobile -->
     <div class="flex items-center lg:hidden">
       <Sheet v-model:open="isOpen">
@@ -124,10 +110,11 @@ const isOpen = ref<boolean>(false);
                   href="/"
                   class="flex items-center"
                 >
-                  <ChevronsDown
-                    class="bg-gradient-to-tr from-primary/70 via-primary to-primary/70 rounded-lg size-9 mr-2 border text-white"
+                  <img
+                    :src="logo"
+                    alt="ArbitrageAI logo"
+                    class="h-12"
                   />
-                  ArbitrageAI
                 </a>
               </SheetTitle>
             </SheetHeader>
@@ -152,18 +139,16 @@ const isOpen = ref<boolean>(false);
 
           <SheetFooter class="flex-col sm:flex-col justify-start items-start">
             <Separator class="mb-2" />
-
-            <ToggleTheme />
           </SheetFooter>
         </SheetContent>
       </Sheet>
     </div>
 
     <!-- Desktop -->
-    <NavigationMenu class="hidden lg:block">
+    <NavigationMenu class="hidden lg:block justify-self-center">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger class="bg-card text-base">
+          <NavigationMenuTrigger class="text-base">
             Features
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -209,17 +194,11 @@ const isOpen = ref<boolean>(false);
       </NavigationMenuList>
     </NavigationMenu>
 
-    <div class="hidden lg:flex">
-      <ToggleTheme />
-    </div>
+    <div class="hidden lg:flex"></div>
   </header>
 </template>
 
 <style scoped>
-.shadow-light {
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.085);
-}
-
 .shadow-dark {
   box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.141);
 }

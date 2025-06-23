@@ -50,7 +50,7 @@ const serviceList: ServiceProps[] = [
 <template>
   <section
     id="services"
-    class="container py-24 sm:py-32"
+    class="container py-24 sm:py-32 scroll-mt-20"
   >
     <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
       Services

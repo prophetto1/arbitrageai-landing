@@ -82,17 +82,13 @@ const iconMap: Record<
 <template>
   <section
     id="features"
-    class="container py-24 sm:py-32"
+    class="container pb-24 sm:pb-32 scroll-mt-20"
   >
     <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
       Features
     </h2>
 
-    <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
-      What Makes ArbitrageAI Unique
-    </h2>
-
-    <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
+    <h3 class="md:w-1/2 mx-auto text-lg text-center text-white mb-8">
       Built on a modern, asynchronous Python stack, ArbitrageAI offers a robust
       and reliable platform for identifying and analyzing arbitrage
       opportunities.

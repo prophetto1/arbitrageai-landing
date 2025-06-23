@@ -15,7 +15,7 @@ import DiscordIcon from "@/icons/DiscordIcon.vue";
 <template>
   <section
     id="community"
-    class="py-12"
+    class="py-12 scroll-mt-20"
   >
     <hr />
     <div class="container py-20 sm:py-20">
