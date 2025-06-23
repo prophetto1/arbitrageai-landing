@@ -20,33 +20,40 @@ import { ArrowRight } from "lucide-vue-next";
           <span class="mr-2 text-primary">
             <Badge>New</Badge>
           </span>
-          <span> Design is out now! </span>
+          <span> Identify Profitable Arbitrage Opportunities </span>
         </Badge>
 
         <div
           class="max-w-screen-md mx-auto text-center text-5xl md:text-6xl font-bold"
         >
           <h1>
-            Experience the
+            Unlock Crypto Arbitrage Opportunities with
             <span
               class="text-transparent bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text"
-              >Shadcn/Vue
+              >AI-Powered Insights
             </span>
-            landing page
           </h1>
         </div>
 
         <p class="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-          We're more than just a tool, we're a community of passionate creators.
-          Get access to exclusive resources, tutorials, and support.
+          ArbitrageAI is a cutting-edge platform designed to help you discover
+          and capitalize on cryptocurrency arbitrage opportunities. Our primary
+          service, funding_arbitrage, collects data from centralized exchanges
+          to identify funding rate arbitrage, while our secondary service
+          handles peer-to-peer arbitrage.
         </p>
 
         <div class="space-y-4 md:space-y-0 md:space-x-4">
-          <Button class="w-5/6 md:w-1/4 font-bold group/arrow">
-            Get Started
-            <ArrowRight
-              class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
-            />
+          <Button
+            as-child
+            class="w-5/6 md:w-1/4 font-bold group/arrow"
+          >
+            <a href="#">
+              Get Started
+              <ArrowRight
+                class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
+              />
+            </a>
           </Button>
 
           <Button
@@ -55,9 +62,9 @@ import { ArrowRight } from "lucide-vue-next";
             class="w-5/6 md:w-1/4 font-bold"
           >
             <a
-              href="https://github.com/leoMirandaa/shadcn-vue-landing-page.git"
+              href="#"
               target="_blank"
-              >Github respository</a
+              >Learn More</a
             >
           </Button>
         </div>

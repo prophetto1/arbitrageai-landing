@@ -17,36 +17,7 @@ interface sponsorsProps {
   name: string;
 }
 
-const sponsors: sponsorsProps[] = [
-  {
-    icon: "crown",
-    name: "Acmebrand",
-  },
-  {
-    icon: "vegan",
-    name: "Acmelogo",
-  },
-  {
-    icon: "ghost",
-    name: "Acmesponsor",
-  },
-  {
-    icon: "puzzle",
-    name: "Acmeipsum",
-  },
-  {
-    icon: "squirrel",
-    name: "Acme",
-  },
-  {
-    icon: "cookie",
-    name: "Accmee",
-  },
-  {
-    icon: "drama",
-    name: "Acmetech",
-  },
-];
+const sponsors: sponsorsProps[] = [];
 
 const iconMap: Record<
   string,
@@ -73,7 +44,7 @@ const iconMap: Record<
     id="sponsors"
     class="max-w-[75%] mx-auto pb-24 sm:pb-32"
   >
-    <h2 class="text-lg md:text-xl text-center mb-6">Our Platinum Sponsors</h2>
+    <h2 class="text-lg md:text-xl text-center mb-6">Our Valued Partners</h2>
 
     <div class="mx-auto">
       <Marquee

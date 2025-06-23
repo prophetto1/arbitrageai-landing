@@ -21,25 +21,27 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Custom Domain Integration",
+    title: "Funding Rate Arbitrage",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
+      "Identifies arbitrage opportunities based on funding rates across centralized exchanges.",
     pro: 0,
   },
   {
-    title: "Social Media Integrations",
+    title: "Peer-to-Peer (P2P) Arbitrage",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
+      "A secondary service focused on finding opportunities in peer-to-peer cryptocurrency markets.",
     pro: 0,
   },
   {
-    title: "Email Marketing Integrations",
-    description: "Lorem dolor sit amet adipisicing.",
+    title: "Real-time Data Collection",
+    description:
+      "Utilizes asyncio and httpx for concurrent, asynchronous API calls to collect real-time market data.",
     pro: 0,
   },
   {
-    title: "SEO Optimization",
-    description: "Lorem ipsum dolor sit amet consectetur.",
+    title: "NEFSS Model Analysis",
+    description:
+      "Core logic centered around the Net-risk-adjusted Expected Funding-fee Spread Score (NEFSS) model for opportunity assessment.",
     pro: 1,
   },
 ];
@@ -55,11 +57,11 @@ const serviceList: ServiceProps[] = [
     </h2>
 
     <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
-      Grow Your Business
+      Our Core Services
     </h2>
     <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-      From marketing and sales to operations and strategy, we have the expertise
-      to help you achieve your goals.
+      ArbitrageAI offers two primary services to cater to different arbitrage
+      strategies.
     </h3>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 

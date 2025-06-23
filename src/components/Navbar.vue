@@ -41,12 +41,20 @@ interface FeatureProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#features",
+    label: "Features",
   },
   {
-    href: "#team",
-    label: "Team",
+    href: "#how-it-works",
+    label: "How It Works",
+  },
+  {
+    href: "#market-context",
+    label: "Market Context",
+  },
+  {
+    href: "#account",
+    label: "Account",
   },
   {
     href: "#contact",
@@ -60,18 +68,19 @@ const routeList: RouteProps[] = [
 
 const featureList: FeatureProps[] = [
   {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
+    title: "Live Opportunity Dashboard",
+    description:
+      "Provides a real-time overview of active arbitrage opportunities, allowing users to quickly identify profitable trades.",
   },
   {
-    title: "Build Trust",
+    title: "Detailed Opportunity Analysis",
     description:
-      "Leverages social proof elements to establish trust and credibility.",
+      "Offers all necessary data for users to validate and act on a specific opportunity, including profit/loss breakdown and historical spread charts.",
   },
   {
-    title: "Capture Leads",
+    title: "Market Indexes",
     description:
-      "Make your lead capture form visually appealing and strategically.",
+      "A dedicated section for broader market context and sentiment indicators, such as the Crypto Fear & Greed Index.",
   },
 ];
 
@@ -93,7 +102,7 @@ const isOpen = ref<boolean>(false);
       <ChevronsDown
         class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
       />
-      ShadcnVue</a
+      ArbitrageAI</a
     >
     <!-- Mobile -->
     <div class="flex items-center lg:hidden">
@@ -119,7 +128,7 @@ const isOpen = ref<boolean>(false);
                   <ChevronsDown
                     class="bg-gradient-to-tr from-primary/70 via-primary to-primary/70 rounded-lg size-9 mr-2 border text-white"
                   />
-                  ShadcnVue
+                  ArbitrageAI
                 </a>
               </SheetTitle>
             </SheetHeader>
@@ -203,21 +212,6 @@ const isOpen = ref<boolean>(false);
 
     <div class="hidden lg:flex">
       <ToggleTheme />
-
-      <Button
-        as-child
-        size="sm"
-        variant="ghost"
-        aria-label="View on GitHub"
-      >
-        <a
-          aria-label="View on GitHub"
-          href="https://github.com/leoMirandaa/shadcn-vue-landing-page.git"
-          target="_blank"
-        >
-          <GithubIcon class="size-5" />
-        </a>
-      </Button>
     </div>
   </header>
 </template>

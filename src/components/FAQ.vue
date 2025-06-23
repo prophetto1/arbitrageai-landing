@@ -14,33 +14,28 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free Shadcn/Vue template.",
+    question: "What is ArbitrageAI?",
+    answer:
+      "ArbitrageAI is a platform designed to identify cryptocurrency arbitrage opportunities, focusing on funding rate arbitrage and peer-to-peer arbitrage.",
     value: "item-1",
   },
   {
-    question: "Duis aute irure dolor in reprehenderit in voluptate velit?",
+    question: "How does the funding_arbitrage service work?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "The funding_arbitrage service collects data from centralized exchanges and uses the NEFSS (Net-risk-adjusted Expected Funding-fee Spread Score) model to analyze and find funding rate arbitrage opportunities.",
     value: "item-2",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
+    question: "What technologies are used in ArbitrageAI?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+      "The project is built on an asynchronous Python stack, utilizing Pydantic for data modeling, SQLAlchemy for database interactions, and PostgreSQL as the database technology.",
     value: "item-3",
   },
   {
-    question: "Excepteur sint occaecat cupidata non proident sunt?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "Where can I find the most authoritative database schema?",
+    answer:
+      "The most complete and authoritative database schema is always the raw SQL file: funding_arbitrage/database/migrations/create_tables.sql.",
     value: "item-4",
-  },
-  {
-    question:
-      "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-    answer: "consectetur adipisicing elit. Sint labore.",
-    value: "item-5",
   },
 ];
 </script>
@@ -54,7 +49,7 @@ const FAQList: FAQProps[] = [
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider">FAQS</h2>
 
       <h2 class="text-3xl md:text-4xl text-center font-bold">
-        Common Questions
+        Frequently Asked Questions
       </h2>
     </div>
 
@@ -77,11 +72,11 @@ const FAQList: FAQProps[] = [
     <h3 class="font-medium mt-4">
       Still have questions?
       <a
-        href="#"
+        href="#contact"
         class="text-muted-foreground"
       >
         <a
-          href="#"
+          href="#contact"
           class="underline"
           >Contact us</a
         >

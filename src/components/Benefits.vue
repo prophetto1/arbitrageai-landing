@@ -19,27 +19,27 @@ interface BenefitsProps {
 const benefitList: BenefitsProps[] = [
   {
     icon: "blocks",
-    title: "Build Brand Trust",
+    title: "Real-time Opportunities",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Access a live-updating dashboard to quickly find the most current and profitable arbitrage opportunities.",
   },
   {
     icon: "lineChart",
-    title: "More Leads",
+    title: "In-depth Analysis",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Get a complete breakdown of each opportunity, including estimated profits, fees, and historical data.",
   },
   {
     icon: "wallet",
-    title: "Higher Conversions",
+    title: "Robust Data Validation",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Our system uses a powerful framework to validate exchange API responses, ensuring data accuracy.",
   },
   {
     icon: "sparkle",
-    title: "Test Marketing Ideas",
+    title: "Comprehensive Market Context",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Stay informed with broader market sentiment indicators like the Crypto Fear & Greed Index to make smarter decisions.",
   },
 ];
 
@@ -71,12 +71,11 @@ const iconMap: Record<
         <h2 class="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
 
         <h2 class="text-3xl md:text-4xl font-bold mb-4">
-          Your Shortcut to Success
+          Maximize Your Crypto Gains
         </h2>
         <p class="text-xl text-muted-foreground mb-8">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ducimus
-          reprehenderit architecto rerum similique facere odit deleniti
-          necessitatibus quo quae.
+          ArbitrageAI provides the tools and insights you need to confidently
+          execute arbitrage strategies and grow your portfolio.
         </p>
       </div>
 

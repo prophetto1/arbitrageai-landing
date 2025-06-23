@@ -21,39 +21,39 @@ interface FeaturesProps {
 const featureList: FeaturesProps[] = [
   {
     icon: "tabletSmartphone",
-    title: "Mobile Friendly",
+    title: "Modular Data Collectors",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Each exchange has its own data collector, allowing for flexible and scalable data acquisition.",
   },
   {
     icon: "badgeCheck",
-    title: "Social Proof",
+    title: "Centralized Orchestration",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "A CollectorManager orchestrates concurrent data collection from various exchanges.",
   },
   {
     icon: "goal",
-    title: "Targeted Content",
+    title: "Decoupled Analysis Pipeline",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Data is collected and stored before being analyzed in a separate, efficient pipeline.",
   },
   {
     icon: "pictureInPicture",
-    title: "Strong Visuals",
+    title: "Pydantic Data Modeling",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Configuration and data modeling are handled by Pydantic for runtime validation and application robustness.",
   },
   {
     icon: "mousePointerClick",
-    title: "Clear CTA",
+    title: "PostgreSQL Database",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "The project leverages PostgreSQL for reliable and scalable data storage, with support for Neon serverless databases in production.",
   },
   {
     icon: "newspaper",
-    title: "Clear Headline",
+    title: "Extensive Testing Suite",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "A comprehensive testing suite, including API response validation, ensures the platform's accuracy and reliability.",
   },
 ];
 
@@ -89,13 +89,13 @@ const iconMap: Record<
     </h2>
 
     <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
-      What Makes Us Different
+      What Makes ArbitrageAI Unique
     </h2>
 
     <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-      fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-      facere tenetur.
+      Built on a modern, asynchronous Python stack, ArbitrageAI offers a robust
+      and reliable platform for identifying and analyzing arbitrage
+      opportunities.
     </h3>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

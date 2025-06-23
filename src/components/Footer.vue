@@ -21,7 +21,7 @@ import Separator from "./ui/separator/Separator.vue";
               class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
             />
 
-            <h3 class="text-2xl">Shadcn-Vue</h3>
+            <h3 class="text-2xl">ArbitrageAI</h3>
           </a>
         </div>
 
@@ -32,7 +32,7 @@ import Separator from "./ui/separator/Separator.vue";
               href="#"
               class="opacity-60 hover:opacity-100"
             >
-              Github
+              Email
             </a>
           </div>
 
@@ -41,16 +41,7 @@ import Separator from "./ui/separator/Separator.vue";
               href="#"
               class="opacity-60 hover:opacity-100"
             >
-              Twitter
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Instagram
+              Support
             </a>
           </div>
         </div>
@@ -62,7 +53,7 @@ import Separator from "./ui/separator/Separator.vue";
               href="#"
               class="opacity-60 hover:opacity-100"
             >
-              iOS
+              Dashboard
             </a>
           </div>
 
@@ -71,16 +62,7 @@ import Separator from "./ui/separator/Separator.vue";
               href="#"
               class="opacity-60 hover:opacity-100"
             >
-              Android
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Web
+              Market Indexes
             </a>
           </div>
         </div>
@@ -89,7 +71,7 @@ import Separator from "./ui/separator/Separator.vue";
           <h3 class="font-bold text-lg">Help</h3>
           <div>
             <a
-              href="#"
+              href="#contact"
               class="opacity-60 hover:opacity-100"
             >
               Contact Us
@@ -98,7 +80,7 @@ import Separator from "./ui/separator/Separator.vue";
 
           <div>
             <a
-              href="#"
+              href="#faq"
               class="opacity-60 hover:opacity-100"
             >
               FAQ
@@ -110,7 +92,7 @@ import Separator from "./ui/separator/Separator.vue";
               href="#"
               class="opacity-60 hover:opacity-100"
             >
-              Feedback
+              Documentation
             </a>
           </div>
         </div>
@@ -122,7 +104,7 @@ import Separator from "./ui/separator/Separator.vue";
               href="#"
               class="opacity-60 hover:opacity-100"
             >
-              Twitch
+              Twitter/X
             </a>
           </div>
 
@@ -131,16 +113,7 @@ import Separator from "./ui/separator/Separator.vue";
               href="#"
               class="opacity-60 hover:opacity-100"
             >
-              Discord
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Dribbble
+              LinkedIn
             </a>
           </div>
         </div>
@@ -152,10 +125,10 @@ import Separator from "./ui/separator/Separator.vue";
           &copy; 2024 Designed and developed by
           <a
             target="_blank"
-            href="https://github.com/leoMirandaa"
+            href="#"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Leo Miranda
+            ArbitrageAI Team
           </a>
         </h3>
       </section>

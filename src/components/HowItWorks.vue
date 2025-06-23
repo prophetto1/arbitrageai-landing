@@ -11,31 +11,31 @@ interface HowItWorksProps {
 
 const HowItWorksList: HowItWorksProps[] = [
   {
-    badgeTitle: "Contribute",
-    title: "Make a Difference with Every Contribution",
+    badgeTitle: "Collect",
+    title: "Data Collection",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
+      "Modular collectors gather real-time market data from various exchanges.",
     image: "roboto.png",
   },
   {
-    badgeTitle: "Discover",
-    title: "Create an Impact with Every Choice",
+    badgeTitle: "Store",
+    title: "Secure Storage",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, sint reiciendis quidem iure veritatis optio facere tenetur.",
+      "Collected data is securely stored in a PostgreSQL database, with the schema defined in create_tables.sql.",
     image: "runner.png",
   },
   {
-    badgeTitle: "Innovate",
-    title: "Make Every Action Count",
+    badgeTitle: "Analyze",
+    title: "Opportunity Analysis",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, odit similique quasi sint.",
+      "A decoupled analysis pipeline, driven by the NEFSS model, identifies and evaluates arbitrage opportunities.",
     image: "pacheco.png",
   },
   {
-    badgeTitle: "Collaborate",
-    title: "Tackle this challenge together",
+    badgeTitle: "Display",
+    title: "Intuitive Dashboard",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
+      "Opportunities and market context are presented in a user-friendly, live-updating dashboard for quick insights.",
     image: "gamestation.png",
   },
 ];
@@ -43,7 +43,7 @@ const HowItWorksList: HowItWorksProps[] = [
 
 <template>
   <section
-    id="features"
+    id="how-it-works"
     class="container py-24 sm:py-32"
   >
     <div class="text-center mb-8">
@@ -52,7 +52,7 @@ const HowItWorksList: HowItWorksProps[] = [
       </h2>
 
       <h2 class="text-3xl md:text-4xl text-center font-bold">
-        Step-by-Step Process
+        Our Step-by-Step Process
       </h2>
     </div>
 
