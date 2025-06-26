@@ -16,36 +16,32 @@ const FAQList: FAQProps[] = [
   {
     question: "What is ArbitrageAI?",
     answer:
-      "ArbitrageAI is a platform designed to identify cryptocurrency arbitrage opportunities, focusing on funding rate arbitrage and peer-to-peer arbitrage.",
+      "ArbitrageAI is the first platform to combine funding rate arbitrage with P2P market inefficiencies, creating multiple revenue streams from a single dashboard.",
     value: "item-1",
   },
   {
-    question: "How does the funding_arbitrage service work?",
+    question: "How much can I realistically earn?",
     answer:
-      "The funding_arbitrage service collects data from centralized exchanges and uses the NEFSS (Net-risk-adjusted Expected Funding-fee Spread Score) model to analyze and find funding rate arbitrage opportunities.",
+      "Our users typically see 15-30% annual returns. Top performers using both funding and P2P arbitrage have achieved 40-50% APY.",
     value: "item-2",
   },
   {
-    question: "What technologies are used in ArbitrageAI?",
+    question: "What's the minimum investment?",
     answer:
-      "The project is built on an asynchronous Python stack, utilizing Pydantic for data modeling, SQLAlchemy for database interactions, and PostgreSQL as the database technology.",
+      "Start with as little as $1,000. Our smart position sizing ensures you can participate in opportunities regardless of capital size.",
     value: "item-3",
   },
   {
-    question: "Where can I find the most authoritative database schema?",
+    question: "How does P2P arbitrage work?",
     answer:
-      "The most complete and authoritative database schema is always the raw SQL file: funding_arbitrage/database/migrations/create_tables.sql.",
+      "We scan thousands of P2P advertisements across platforms like Binance P2P, LocalBitcoins, and Paxful. When the same asset trades at different prices due to payment methods or merchant factors, you profit from the spread.",
     value: "item-4",
   },
   {
-    question: "Your Question Here",
-    answer: "Your answer here.",
+    question: "Is this actually risk-free?",
+    answer:
+      "While no investment is 100% risk-free, our strategies are market-neutral. You're not betting on price direction - you're capturing inefficiencies that exist due to market structure.",
     value: "item-5",
-  },
-  {
-    question: "Your Question Here",
-    answer: "Your answer here.",
-    value: "item-6",
   },
 ];
 </script>

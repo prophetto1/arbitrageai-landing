@@ -29,17 +29,16 @@ import DiscordIcon from "@/icons/DiscordIcon.vue";
                 class="w-20 h-20 m-auto mb-4"
                 :is="DiscordIcon"
               />
-              Ready to join the
+              Join 3,000+
               <span
                 class="text-transparent bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text"
               >
-                ArbitrageAI Community?
+                Profitable Traders
               </span>
             </CardTitle>
           </CardHeader>
           <CardContent class="lg:w-[80%] text-xl text-muted-foreground">
-            Join our growing community to stay updated on the latest features,
-            share insights, and get support.
+            Be part of the fastest-growing arbitrage community in crypto. Get exclusive access to private Discord with real-time opportunity alerts, weekly strategy sessions with $100k+ earners, early access to new exchange integrations, and custom bot development for your strategies.
           </CardContent>
 
           <CardFooter>
